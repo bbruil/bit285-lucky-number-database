@@ -11,6 +11,9 @@ namespace lucky_number_database.Models
         private Random _random = new Random();
         private int[] _spinner = new int[3];
         private decimal _balance;
+        [Key]
+        public int LuckyNumberId { get; set; }
+        public string Name { get; set; }
 
         [Required]
         [Display(Name = "Lucky Number")]
